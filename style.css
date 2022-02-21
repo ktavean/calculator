@@ -1,31 +1,48 @@
 body {
     height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #12355B;
 }
 
 button {
     width: 80px;
     height: 80px;
     font-size: 20px;
+    border: 1px solid;
+    border-radius: 5px;
 }
 
-p {
+#container #title {
+    margin-bottom: 50px;
+    text-align: center;
+    margin-top: 0px;
     font-size: 25px;
+    color: white;
+}
+
+#display p {
+    font-size: 25px;
+    padding: 6px;
     margin: 10px 10px;
+    color: #FF570A;
 }
 
 #container {
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
 #display {
-    width: 335px;
-    height: 48px;
+    width: 332px;
+    height: 60px;
     text-align: left;
-    border: 1px solid;
+    box-sizing: border-box;
+    border: 1px solid white;
+    background: black;
 }
 
 #buttons {
@@ -45,11 +62,25 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid;
 }
 
 #right-side {
     display: flex;
     flex-direction: column;
-    border: 1px solid;
+}
+
+.numbers {
+    color: white;
+    background: black;
+}
+
+#right-side button, #decimal, #del, #percentage, #equals {
+    background: #FF570A;
+}
+
+#container #footer {
+    text-align: center;
+    margin-top: 120px;
+    font-size: 25px;
+    color: white;
 }

@@ -8,6 +8,7 @@
     </head>
     <body>
         <div id="container">
+            <p id="title">Calculator</p>
             <div id="display">
                 <p></p>
             </div>
@@ -15,37 +16,38 @@
                 <div id="left-side">
                     <div class="row">
                         <button type="button" id="decimal" onclick="displayNumbers(event)" value=".">.</button>
-                        <button type="button" onclick="displayNumbers(event)" value="%">%</button>
-                        <button type="button" onclick="delNumber()" value="backspace">DEL</button>
+                        <button type="button" id="percentage" onclick="displayNumbers(event)" value="%">%</button>
+                        <button type="button" id="del" onclick="delNumber()" value="del">DEL</button>
                     </div>
                     <div class="row">
-                        <button type="button" onclick="displayNumbers(event)" value="1">1</button>
-                        <button type="button" onclick="displayNumbers(event)" value="2">2</button>
-                        <button type="button" onclick="displayNumbers(event)" value="3">3</button>
+                        <button type="button" class="numbers" onclick="displayNumbers(event)" value="1">1</button>
+                        <button type="button" class="numbers" onclick="displayNumbers(event)" value="2">2</button>
+                        <button type="button" class="numbers" onclick="displayNumbers(event)" value="3">3</button>
                     </div>
                     <div class="row">
-                        <button type="button" onclick="displayNumbers(event)" value="4">4</button>
-                        <button type="button" onclick="displayNumbers(event)" value="5">5</button>
-                        <button type="button" onclick="displayNumbers(event)" value="6">6</button>
+                        <button type="button" class="numbers" onclick="displayNumbers(event)" value="4">4</button>
+                        <button type="button" class="numbers" onclick="displayNumbers(event)" value="5">5</button>
+                        <button type="button" class="numbers" onclick="displayNumbers(event)" value="6">6</button>
                     </div>
                     <div class="row">
-                        <button type="button" onclick="displayNumbers(event)" value="7">7</button>
-                        <button type="button" onclick="displayNumbers(event)" value="8">8</button>
-                        <button type="button" onclick="displayNumbers(event)" value="9">9</button>
+                        <button type="button" class="numbers" onclick="displayNumbers(event)" value="7">7</button>
+                        <button type="button" class="numbers" onclick="displayNumbers(event)" value="8">8</button>
+                        <button type="button" class="numbers" onclick="displayNumbers(event)" value="9">9</button>
                     </div>
                     <div class="row">
-                        <button type="button" id="btn0" onclick="displayNumbers(event)" value="0">0</button>
-                        <button type="button" id="equals" value="=">=</button>
+                        <button type="button" class="numbers" id="btn0" onclick="displayNumbers(event)" value="0">0</button>
+                        <button type="button" id="equals" onclick="stringToNum()" value="=">=</button>
                     </div>
                 </div>
                 <div id="right-side">
                     <button type="button" onclick="clearDisplay()" value="clear">Clear</button>
-                    <button type="button" onclick="storeNumber(event)" value="+">+</button>
-                    <button type="button" onclick="storeNumber(event)" value="-">-</button>
-                    <button type="button" onclick="storeNumber(event)" value="*">*</button>
-                    <button type="button" onclick="storeNumber(event)" value="/">/</button>
+                    <button type="button" onclick="storeOperator(event)" value="+">+</button>
+                    <button type="button" onclick="storeOperator(event)" value="-">-</button>
+                    <button type="button" onclick="storeOperator(event)" value="*">*</button>
+                    <button type="button" onclick="storeOperator(event)" value="/">/</button>
                 </div>
             </div>
+            <p id="footer">Made by ktavean - 2022.</p>
         </div>
     </body>
 </html>
