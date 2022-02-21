@@ -1,4 +1,4 @@
-const paragraph = document.querySelector("p")
+const paragraph = document.querySelector("#calc")
 const decimal = document.querySelector("#decimal");
 let operator = "";
 let numbers = "";
