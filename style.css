@@ -74,8 +74,18 @@ button {
     background: black;
 }
 
+.numbers:active {
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
 #right-side button, #decimal, #del, #percentage, #equals {
     background: #FF570A;
+}
+
+#right-side button:active, #decimal:active, #del:active, #percentage:active, #equals:active {
+    background: #FF8247;
 }
 
 #container #footer {
